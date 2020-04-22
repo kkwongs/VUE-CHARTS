@@ -3,11 +3,9 @@
 </template>
 
 <script>
-import Chart from 'chart.js';
-
 export default {
   mounted() {
-    var barChart = new Chart(this.$refs.barChart.getContext('2d'), {
+    var barChart = new this.$_Chart(this.$refs.barChart.getContext('2d'), {
         type: 'bar',
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
