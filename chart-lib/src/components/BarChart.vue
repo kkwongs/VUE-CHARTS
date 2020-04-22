@@ -1,5 +1,5 @@
 <template>
-  <canvas id="myChart" width="400" height="400"></canvas>
+  <canvas id="barChart" width="400" height="400"></canvas>
 </template>
 
 <script>
@@ -7,8 +7,8 @@ import Chart from 'chart.js';
 
 export default {
   mounted() {
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
+    var ctx = document.getElementById('barChart').getContext('2d');
+    var barChart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
