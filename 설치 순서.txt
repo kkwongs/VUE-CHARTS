@@ -1,0 +1,7 @@
+VUE_CHARTS
+1. vue create chart-lib
+
+chart-lib
+1. npm i chart.js
+2. import Chart from 'chart.js'
+3. mounted()
